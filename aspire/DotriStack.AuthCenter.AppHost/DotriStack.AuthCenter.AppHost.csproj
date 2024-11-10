@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>b56c062c-5ef8-4dc4-b32a-19eb4d0b1122</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\samples\AuthCenter.Sample.WebHost\AuthCenter.Sample.WebHost.csproj" />
+    <ProjectReference Include="..\..\src\AuthCenter.WebHost\AuthCenter.WebHost.csproj" />
+  </ItemGroup>
+
+</Project>
